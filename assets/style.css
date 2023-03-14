@@ -1,0 +1,38 @@
+/* Global Varialbes & styles*/
+:root{
+  --color1: white;
+  --color2: black;
+  --color3: grey;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header Styles */
+header{
+  border: 1px solid red;
+  /* padding: 10px; */
+  height: 70px;
+  margin-bottom: 10px;
+  width: 100%;
+  /* position: absolute; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-left: 25px;
+}
+
