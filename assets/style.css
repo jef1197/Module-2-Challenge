@@ -1,22 +1,35 @@
 /* Global Varialbes & styles*/
 :root{
-  --color1: white;
-  --color2: black;
-  --color3: grey;
+  --color1: #F6F1F1;
+  --color2: #000000;
+  --color3: #146C94;
+  --color4: #19A7CE;
+  --defaultSitePadding: 0px 0 0 120px;
+}
+
+main{
+  background-color: var(--color1);
+  color: var(--color3);
 }
 
 a{
   text-decoration: none;
 }
 
+h2 {
+  font-size: 50px;
+  position: relative;
+}
+
 /* Header Styles */
+
 header{
-  border: 1px solid red;
-  /* padding: 10px; */
   height: 70px;
   margin-bottom: 10px;
   width: 100%;
-  /* position: absolute; */
+  position: fixed;
+  z-index: 5;
+  padding-right: 100px;
 }
 
 nav {
@@ -25,14 +38,247 @@ nav {
   align-content: center;
   align-items: center;
   height: 100%;
-  padding: 0px 20px;
+  padding: var(--defaultSitePadding);
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
-ul li {
+nav li {
   margin-left: 25px;
+}
+
+nav a {
+  color: var(--color3);
+  transition: color .5s;
+}
+
+nav a:hover {
+  color: var(--color1);
+  transition: color .5s;
+}
+
+/* Hero Styles */
+
+.hero {
+  background-image: url(/assets/images/3492868.gif);
+  height: 90vh;
+  width: 100%;
+  padding: var(--defaultSitePadding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.25;
+  color: white;
+}
+
+/* About Styles */
+
+.about-me {
+  padding: var(--defaultSitePadding);
+  padding-top: 50px;
+  margin-bottom: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.about-me article {
+  position: relative;
+  z-index: 2;
+  width: calc(50% - 10px);
+  padding: 120px 100px 140px 0;
+  background-color: var(--color1);
+}
+
+.about-me h2 {
+  margin-bottom: 50px;
+}
+
+.about-me p {
+  font-size: 30px;
+}
+
+#about-img {
+  position: absolute;
+  right: 0;
+  top: -45px;
+  z-index: 1;
+}
+
+.about-me img{
+  max-height: 620px;
+  width: 100%;
+}
+
+/* Work Styles */
+
+.work-me {
+  padding: var(--defaultSitePadding);
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.work-me h2 {
+  margin-bottom: 50px;
+}
+
+/* Card Styles for Work Section*/
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  height: 200px;
+  width: 600px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card p {
+  background-color: rgba(0, 0, 0, 0.685)    ;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--color4);
+}
+
+/* Unique images for each card */
+
+#first-card {
+  height: 400px;
+  width: 1200px;
+  background-image: url(/assets/images/weatherbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#second-card {
+  background-image: url(/assets/images/rpsThumb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third-card {
+  background-image: url(/assets/images/memory.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fourth-card {
+  background-image: url(/assets/images/shop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contact Styles */
+.contact-me {
+  background-color: var(--color3);
+  width: 100%;
+}
+
+.contact-me h2 {
+  text-align: center;
+  padding: 50px;
+  color: var(--color1);
+}
+
+.contact-list {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-me a {
+  font-size: 20px;
+  color: var(--color1);
+  transition: color .5s;
+}
+
+.contact-me a:hover {
+  color: var(--color4);
+  transition: color .5s;
+}
+
+/* Syles For Tablet Screens */
+@media screen and (max-width: 768px) {
+  .about-me article {
+    width: 80%;
+    padding-left: 25px;
+  }
+  .about-me img{
+    max-height: 350px;
+  }
+  
+  .work-me {
+    padding: 0;
+    text-align: center;
+  }
+
+  .contact-list {
+    width: 100%;
+  }
+
+}
+
+/* Syles For Mobile Screens */
+@media screen and (max-width: 425px) {
+
+  nav {
+    padding-left: 50px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .about-me {
+    padding: 0;
+  }
+
+  .about-me article {
+    padding-bottom: 50px;
+  }
+
+  .about-me p {
+    font-size: 15px;
+  }
+
+  .about-me img{
+    max-height: 250px;
+  }
+
+  .contact-me a {
+    font-size: 12px;
+  }
 }
 
