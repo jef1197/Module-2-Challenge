@@ -62,7 +62,7 @@ nav a:hover {
 /* Hero Styles */
 
 .hero {
-  background-image: url(images/3492868.gif);
+  background-image: url(./images/3492868.gif);
   height: 90vh;
   width: 100%;
   padding: var(--defaultSitePadding);
@@ -160,26 +160,26 @@ h1 {
 #first-card {
   height: 400px;
   width: 1200px;
-  background-image: url(images/weatherbg.png);
+  background-image: url(./images/weatherbg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #second-card {
-  background-image: url(images/rpsThumb.png);
+  background-image: url(./images/rpsThumb.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third-card {
-  background-image: url(images/memory.png);
+  background-image: url(./images/memory.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #fourth-card {
-  background-image: url(images/shop.png);
+  background-image: url(./images/shop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
