@@ -184,6 +184,18 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#fifth-card {
+  background-image: url(./images/nextCity.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sixth-card {
+  background-image: url(./images/tasty.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Contact Styles */
 .contact-me {
